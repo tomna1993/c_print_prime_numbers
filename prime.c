@@ -1,5 +1,5 @@
+#include <cs50.h>
 #include <stdio.h>
-#include <cs50.c>
 
 bool prime(int n);
 
@@ -42,7 +42,8 @@ bool prime(int n)
 
 		divider++;
 
-	// Don't check the number itself && run while until modulus is 0 && check just the numbers up to the half of the given number 
+	// Don't check the number itself && run while until modulus is 0 && 
+	// check just the numbers up to the half of the given number 
 	} while (divider < n && modulus >= 1 && divider < n/2);
 
 	if(modulus != 0 || (modulus == 0 && n == 2 && n != 1))
